@@ -1,40 +1,40 @@
 :root {
-  /* ---- Color: deep navy + warm gold, premium/consulting feel ---- */
-  --color-ink: #1a2332;          /* primary text */
-  --color-ink-soft: #2c3a4f;     /* secondary headings */
-  --color-bg: #f7f6f2;           /* warm off-white page background */
+  /* ---- Color: clean professional blue, Coursera/LinkedIn-style trust palette ---- */
+  --color-ink: #1c2733;          /* primary text */
+  --color-ink-soft: #2e3b4a;     /* secondary headings */
+  --color-bg: #f6f7f9;           /* light neutral grey background */
   --color-surface: #ffffff;      /* cards, panels */
-  --color-surface-alt: #eeece4;  /* subtle alternate section background */
-  --color-border: #ddd9cd;       /* hairline borders */
+  --color-surface-alt: #eef1f5;  /* subtle alternate section background */
+  --color-border: #dde2e8;       /* hairline borders */
 
-  --color-accent: #b8893f;       /* warm gold: links, primary actions */
-  --color-accent-strong: #96701f;/* hover/active state of accent */
-  --color-accent-soft: #f3e6cb;  /* tinted background for accent chips */
+  --color-accent: #0a66c2;       /* professional blue: links, primary actions */
+  --color-accent-strong: #084d93;/* hover/active state of accent */
+  --color-accent-soft: #e3effb;  /* tinted background for accent chips */
 
-  --color-navy: #19243a;         /* deep navy for hero/sidebar accents */
-  --color-text-muted: #5c6270;   /* secondary/supporting text */
-  --color-success: #2f6b4f;
-  --color-danger: #9c4035;
+  --color-navy: #0f2540;         /* deep navy for hero/sidebar accents */
+  --color-text-muted: #5b6675;   /* secondary/supporting text */
+  --color-success: #1e7d4f;
+  --color-danger: #b3361f;
 
   /* Dark "stage" surface used for hero — distinct, used sparingly */
-  --color-stage: #141b29;
-  --color-stage-text: #f3f1ea;
-  --color-stage-muted: #9aa3b5;
-  --color-stage-border: #2a3450;
+  --color-stage: #0f2540;
+  --color-stage-text: #f3f5f8;
+  --color-stage-muted: #a9b6c6;
+  --color-stage-border: #1f3a5c;
 
   /* Dark mode tokens (applied via [data-theme="dark"]) */
-  --color-ink-dark: #ece8e0;
-  --color-bg-dark: #11151d;
-  --color-surface-dark: #181e29;
-  --color-surface-alt-dark: #1f2733;
-  --color-border-dark: #303a4a;
-  --color-accent-dark: #d6ab5f;
-  --color-text-muted-dark: #9aa3b0;
+  --color-ink-dark: #ebeef2;
+  --color-bg-dark: #11161d;
+  --color-surface-dark: #181f29;
+  --color-surface-alt-dark: #1f2832;
+  --color-border-dark: #2e3949;
+  --color-accent-dark: #4d9fe8;
+  --color-text-muted-dark: #99a3b0;
 
-  /* ---- Type: one clean sans family throughout, weight does the work ---- */
+  /* ---- Type: ONE clean sans family for everything, no monospace in UI text ---- */
   --font-display: "Plus Jakarta Sans", "Inter", -apple-system, "Segoe UI", sans-serif;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --font-body: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "Plus Jakarta Sans", "Inter", -apple-system, "Segoe UI", sans-serif; /* kept as alias so old refs stay consistent */
 
   --fs-h1: clamp(2.3rem, 1.8rem + 2.4vw, 3.5rem);
   --fs-h2: clamp(1.55rem, 1.35rem + 1vw, 2.15rem);
@@ -58,8 +58,8 @@
   --space-5: 3.4rem;
   --space-6: 4.8rem;
 
-  --shadow-card: 0 1px 2px rgba(26, 35, 50, 0.07), 0 5px 16px rgba(26, 35, 50, 0.06);
-  --shadow-lift: 0 4px 10px rgba(26,35,50,0.1), 0 14px 30px rgba(26,35,50,0.1);
+  --shadow-card: 0 1px 2px rgba(15, 37, 64, 0.07), 0 5px 16px rgba(15, 37, 64, 0.06);
+  --shadow-lift: 0 4px 10px rgba(15,37,64,0.1), 0 14px 30px rgba(15,37,64,0.1);
   --transition: 180ms ease;
 }
 
@@ -70,8 +70,8 @@
   --color-surface-alt: var(--color-surface-alt-dark);
   --color-border: var(--color-border-dark);
   --color-accent: var(--color-accent-dark);
-  --color-accent-strong: #e8c280;
-  --color-accent-soft: #332918;
+  --color-accent-strong: #7ebcef;
+  --color-accent-soft: #1b2e42;
   --color-text-muted: var(--color-text-muted-dark);
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 5px 16px rgba(0, 0, 0, 0.3);
   --shadow-lift: 0 6px 14px rgba(0,0,0,0.35), 0 18px 36px rgba(0,0,0,0.3);

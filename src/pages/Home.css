@@ -6,7 +6,7 @@
 .hero {
   background: var(--color-stage);
   background-image:
-    radial-gradient(800px circle at 90% -20%, rgba(184, 137, 63, 0.14), transparent 60%);
+    radial-gradient(800px circle at 90% -20%, rgba(77, 159, 232, 0.16), transparent 60%);
   color: var(--color-stage-text);
   margin: calc(-1 * var(--space-5)) calc(-1 * var(--space-4)) var(--space-5);
   padding: var(--space-5) var(--space-4);
@@ -23,12 +23,11 @@
 }
 
 .hero-eyebrow {
-  font-family: var(--font-mono);
-  font-size: var(--fs-tiny);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #d6ab5f;
+  font-family: var(--font-display);
+  font-size: 0.92rem;
   font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #7ebcef;
   display: inline-flex;
   align-items: center;
   gap: 0.6em;
@@ -39,8 +38,9 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #d6ab5f;
-  box-shadow: 0 0 0 4px rgba(214, 171, 95, 0.18);
+  background: #7ebcef;
+  box-shadow: 0 0 0 4px rgba(126, 188, 239, 0.18);
+  flex-shrink: 0;
 }
 
 .hero h1 {
@@ -53,7 +53,7 @@
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 1.2rem;
-  color: #d6ab5f;
+  color: #7ebcef;
   margin-bottom: var(--space-3);
 }
 
@@ -85,13 +85,14 @@
   display: flex;
   gap: var(--space-3);
   font-size: var(--fs-small);
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
+  font-weight: 600;
 }
 .hero-socials a {
   color: var(--color-stage-muted);
 }
 .hero-socials a:hover {
-  color: #d6ab5f;
+  color: #7ebcef;
 }
 
 .hero-photo img {

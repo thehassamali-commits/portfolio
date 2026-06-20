@@ -70,12 +70,10 @@ code, pre {
 }
 
 .eyebrow {
-  font-family: var(--font-mono);
-  font-size: var(--fs-tiny);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--color-accent-strong);
+  font-family: var(--font-display);
+  font-size: 0.92rem;
   font-weight: 600;
+  color: var(--color-accent-strong);
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
@@ -87,6 +85,7 @@ code, pre {
   height: 2px;
   background: var(--color-accent);
   display: inline-block;
+  flex-shrink: 0;
 }
 
 .btn {
@@ -112,18 +111,18 @@ code, pre {
 .btn-primary {
   background: var(--color-accent);
   border-color: var(--color-accent);
-  color: #1a1308;
-  box-shadow: 0 4px 14px rgba(184, 137, 63, 0.3);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(10, 102, 194, 0.28);
 }
 .btn-primary:hover {
   background: var(--color-accent-strong);
   border-color: var(--color-accent-strong);
   color: #fff;
-  box-shadow: 0 6px 20px rgba(184, 137, 63, 0.36);
+  box-shadow: 0 6px 20px rgba(10, 102, 194, 0.34);
 }
 
 .tag {
-  font-family: var(--font-mono);
+  font-family: var(--font-display);
   font-size: var(--fs-tiny);
   padding: 0.3em 0.75em;
   border-radius: 999px;
