@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import certifications from "../data/certifications.json";
+import { asset } from "../utils/asset";
 import "./Certifications.css";
 
 export default function Certifications() {
@@ -38,7 +39,7 @@ export default function Certifications() {
             aria-label={`View ${cert.title} certificate full-size`}
           >
             <div className="cert-thumb">
-              <img src={cert.image} alt="" onError={(e) => (e.target.style.display = "none")} />
+              <img src={asset(cert.image)} alt="" onError={(e) => (e.target.style.display = "none")} />
               <span className="cert-thumb-overlay">View certificate</span>
             </div>
             <div className="cert-body">
@@ -62,7 +63,7 @@ export default function Certifications() {
             &times;
           </button>
           <img
-            src={activeCert.image}
+            src={asset(activeCert.image)}
             alt={activeCert.title}
             onClick={(e) => e.stopPropagation()}
           />

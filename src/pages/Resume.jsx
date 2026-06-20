@@ -1,7 +1,10 @@
 import profile from "../data/profile.json";
+import { asset } from "../utils/asset";
 import "./Resume.css";
 
 export default function Resume() {
+  const resumeUrl = asset(profile.resumeFile);
+
   return (
     <div className="page">
       <header className="page-header resume-header">
@@ -9,14 +12,14 @@ export default function Resume() {
           <span className="eyebrow">Resume</span>
           <h1>My resume</h1>
         </div>
-        <a className="btn btn-primary" href={profile.resumeFile} download>
+        <a className="btn btn-primary" href={resumeUrl} download>
           Download PDF
         </a>
       </header>
 
       <div className="resume-viewer card">
         <iframe
-          src={profile.resumeFile}
+          src={resumeUrl}
           title="Resume"
           width="100%"
           height="100%"
@@ -24,7 +27,7 @@ export default function Resume() {
       </div>
       <p className="resume-fallback">
         Viewer not loading?{" "}
-        <a href={profile.resumeFile} target="_blank" rel="noreferrer">
+        <a href={resumeUrl} target="_blank" rel="noreferrer">
           Open the resume in a new tab
         </a>
         .

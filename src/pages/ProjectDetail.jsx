@@ -1,5 +1,6 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import { getProjectBySlug } from "../data/projectsLoader";
+import { asset } from "../utils/asset";
 import "./ProjectDetail.css";
 
 export default function ProjectDetail() {
@@ -35,7 +36,7 @@ export default function ProjectDetail() {
       </header>
 
       <div className="project-detail-thumb">
-        <img src={project.thumbnail} alt="" onError={(e) => (e.target.style.display = "none")} />
+        <img src={asset(project.thumbnail)} alt="" onError={(e) => (e.target.style.display = "none")} />
       </div>
 
       <section className="project-detail-section">

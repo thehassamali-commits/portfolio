@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { asset } from "../utils/asset";
 import "./ProjectCard.css";
 
 export default function ProjectCard({ project }) {
@@ -6,7 +7,7 @@ export default function ProjectCard({ project }) {
     <Link to={`/projects/${project.slug}`} className="project-card card">
       <div className="project-card-thumb">
         <img
-          src={project.thumbnail}
+          src={asset(project.thumbnail)}
           alt=""
           onError={(e) => (e.target.style.display = "none")}
         />

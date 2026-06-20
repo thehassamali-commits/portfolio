@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import profile from "../data/profile.json";
 import { featuredProjects } from "../data/projectsLoader";
 import ProjectCard from "../components/ProjectCard";
+import { asset } from "../utils/asset";
 import "./Home.css";
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
           <div className="hero-photo">
             <div className="hero-photo-frame">
               <img
-                src={profile.photo}
+                src={asset(profile.photo)}
                 alt={profile.name}
                 onError={(e) => {
                   e.target.style.display = "none";
