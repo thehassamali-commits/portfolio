@@ -2,36 +2,26 @@
   {
     "category": "Programming & Querying",
     "items": [
-      { "name": "Python", "level": "Proficient" },
-      { "name": "SQL", "level": "Proficient" },
-      { "name": "R", "level": "Familiar" }
+      { "name": "Python", "level": "Familiar" },
+      { "name": "SQL", "level": "Familiar" },
+      { "name": "R", "level": "Learning" }
     ]
   },
   {
     "category": "Data Analysis & Visualization",
     "items": [
-      { "name": "Pandas / NumPy", "level": "Proficient" },
-      { "name": "Tableau", "level": "Familiar" },
-      { "name": "Power BI", "level": "Familiar" },
-      { "name": "Matplotlib / Seaborn", "level": "Proficient" }
-    ]
-  },
-  {
-    "category": "Machine Learning & AI",
-    "items": [
-      { "name": "Scikit-learn", "level": "Proficient" },
-      { "name": "TensorFlow / Keras", "level": "Learning" },
-      { "name": "PyTorch", "level": "Learning" },
-      { "name": "NLP fundamentals", "level": "Familiar" }
+      { "name": "Pandas / NumPy", "level": "Familiar" },
+      { "name": "Matplotlib / Seaborn", "level": "Familiar" },
+      { "name": "Excel", "level": "Proficient" },
+      { "name": "Tableau", "level": "Learning" },
+      { "name": "Power BI", "level": "Learning" }
     ]
   },
   {
     "category": "Tools & Platforms",
     "items": [
-      { "name": "Git / GitHub", "level": "Proficient" },
-      { "name": "Jupyter", "level": "Proficient" },
-      { "name": "Excel", "level": "Proficient" },
-      { "name": "Cloud (AWS/GCP basics)", "level": "Learning" }
+      { "name": "Git / GitHub", "level": "Familiar" },
+      { "name": "Jupyter Notebook", "level": "Familiar" }
     ]
   }
 ]
