@@ -23,13 +23,13 @@
   --color-stage-border: #1f3a5c;
 
   /* Dark mode tokens (applied via [data-theme="dark"]) */
-  --color-ink-dark: #ebeef2;
-  --color-bg-dark: #11161d;
-  --color-surface-dark: #181f29;
-  --color-surface-alt-dark: #1f2832;
-  --color-border-dark: #2e3949;
-  --color-accent-dark: #4d9fe8;
-  --color-text-muted-dark: #99a3b0;
+  --color-ink-dark: #f3f5f8;
+  --color-bg-dark: #10141a;
+  --color-surface-dark: #1a212b;
+  --color-surface-alt-dark: #222b37;
+  --color-border-dark: #38445570;
+  --color-accent-dark: #6cb3f2;
+  --color-text-muted-dark: #b6c0cc;
 
   /* ---- Type: ONE clean sans family for everything, no monospace in UI text ---- */
   --font-display: "Plus Jakarta Sans", "Inter", -apple-system, "Segoe UI", sans-serif;
@@ -70,11 +70,13 @@
   --color-surface-alt: var(--color-surface-alt-dark);
   --color-border: var(--color-border-dark);
   --color-accent: var(--color-accent-dark);
-  --color-accent-strong: #7ebcef;
-  --color-accent-soft: #1b2e42;
+  --color-accent-strong: #9bcdf7;
+  --color-accent-soft: #1e3349;
   --color-text-muted: var(--color-text-muted-dark);
-  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 5px 16px rgba(0, 0, 0, 0.3);
-  --shadow-lift: 0 6px 14px rgba(0,0,0,0.35), 0 18px 36px rgba(0,0,0,0.3);
+  --color-success: #3ea876;
+  --color-danger: #e0654d;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.5), 0 5px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lift: 0 6px 14px rgba(0,0,0,0.45), 0 18px 36px rgba(0,0,0,0.4);
 }
 
 @media (prefers-reduced-motion: reduce) {

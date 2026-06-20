@@ -45,4 +45,4 @@
 }
 .skill-level-3 { color: #fff; background: var(--color-success); }
 .skill-level-2 { color: var(--color-accent-strong); background: var(--color-accent-soft); }
-.skill-level-1 { color: var(--color-bronze); background: #f3e3d6; }
+.skill-level-1 { color: var(--color-text-muted); background: var(--color-surface-alt); border: 1px solid var(--color-border); }

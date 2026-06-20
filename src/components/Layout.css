@@ -17,6 +17,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .main-content {
+    padding: var(--space-3) 1rem;
+  }
+}
+
 .page {
   max-width: var(--content-max);
   margin: 0 auto;
@@ -31,4 +37,16 @@
 
 .page-header h1 {
   margin-bottom: var(--space-2);
+}
+
+/* Force single-column grids on narrow phones regardless of each grid's
+   own minmax() value, since 240-290px minimums can overflow ~320-375px
+   screens once padding is subtracted. */
+@media (max-width: 420px) {
+  .project-grid,
+  .career-columns,
+  .cert-grid,
+  .skills-groups {
+    grid-template-columns: 1fr !important;
+  }
 }

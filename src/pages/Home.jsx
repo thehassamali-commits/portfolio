@@ -26,7 +26,19 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-photo">
-            <img src={profile.photo} alt={profile.name} onError={(e) => (e.target.style.display = "none")} />
+            <div className="hero-photo-frame">
+              <img
+                src={profile.photo}
+                alt={profile.name}
+                onError={(e) => {
+                  e.target.style.display = "none";
+                  e.target.nextElementSibling.style.display = "flex";
+                }}
+              />
+              <div className="hero-photo-placeholder" aria-hidden="true">
+                <span>Add your portrait at<br /><code>{profile.photo}</code></span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
