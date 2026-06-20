@@ -1,0 +1,15 @@
+{
+  "slug": "customer-churn-prediction",
+  "title": "Customer Churn Prediction",
+  "summary": "Predicting which telecom customers are likely to churn using classification models, to support targeted retention campaigns.",
+  "category": "Machine Learning",
+  "tech": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+  "date": "2026-03",
+  "githubUrl": "https://github.com/yourusername/customer-churn-prediction",
+  "demoUrl": "",
+  "thumbnail": "/content/projects/churn-thumb.jpg",
+  "problem": "A telecom dataset with ~7,000 customers needed a model to flag likely churners so retention offers could be targeted instead of blanket-applied.",
+  "approach": "Cleaned and explored the dataset, engineered tenure and usage-based features, then compared logistic regression, random forest, and gradient boosting models using cross-validation.",
+  "results": "Gradient boosting achieved 84% recall on churners with 79% overall accuracy, identified contract type and monthly charges as the strongest churn predictors.",
+  "featured": true
+}

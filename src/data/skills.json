@@ -1,0 +1,37 @@
+[
+  {
+    "category": "Programming & Querying",
+    "items": [
+      { "name": "Python", "level": "Proficient" },
+      { "name": "SQL", "level": "Proficient" },
+      { "name": "R", "level": "Familiar" }
+    ]
+  },
+  {
+    "category": "Data Analysis & Visualization",
+    "items": [
+      { "name": "Pandas / NumPy", "level": "Proficient" },
+      { "name": "Tableau", "level": "Familiar" },
+      { "name": "Power BI", "level": "Familiar" },
+      { "name": "Matplotlib / Seaborn", "level": "Proficient" }
+    ]
+  },
+  {
+    "category": "Machine Learning & AI",
+    "items": [
+      { "name": "Scikit-learn", "level": "Proficient" },
+      { "name": "TensorFlow / Keras", "level": "Learning" },
+      { "name": "PyTorch", "level": "Learning" },
+      { "name": "NLP fundamentals", "level": "Familiar" }
+    ]
+  },
+  {
+    "category": "Tools & Platforms",
+    "items": [
+      { "name": "Git / GitHub", "level": "Proficient" },
+      { "name": "Jupyter", "level": "Proficient" },
+      { "name": "Excel", "level": "Proficient" },
+      { "name": "Cloud (AWS/GCP basics)", "level": "Learning" }
+    ]
+  }
+]

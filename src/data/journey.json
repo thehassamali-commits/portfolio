@@ -1,0 +1,23 @@
+[
+  {
+    "date": "2026",
+    "title": "Machine Learning Specialization",
+    "org": "Course Provider",
+    "type": "Course",
+    "description": "Covered supervised/unsupervised learning, model evaluation, and applied ML workflows end to end."
+  },
+  {
+    "date": "2025",
+    "title": "Data Analytics Professional Certificate",
+    "org": "Course Provider",
+    "type": "Certificate",
+    "description": "Hands-on SQL, dashboarding, and statistical analysis on real-world datasets."
+  },
+  {
+    "date": "2025",
+    "title": "Started self-directed Data Science learning path",
+    "org": "Self-study",
+    "type": "Milestone",
+    "description": "Began structured study across analytics, ML, and AI fundamentals with weekly project practice."
+  }
+]

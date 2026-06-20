@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      // GitHub Pages has no server-side routing, so deep links (e.g.
+      // /projects/my-slug) 404 on refresh. This redirects them through
+      // a query string back to index.html, which restores the real path.
+      var basePath = "/portfolio"; // must match VITE_BASE_PATH in deploy.yml, no trailing slash
+      var path = window.location.pathname.replace(basePath, "");
+      sessionStorage.redirect = path + window.location.search + window.location.hash;
+      window.location.replace(basePath + "/");
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "slug": "sales-performance-dashboard",
+  "title": "Sales Performance Dashboard",
+  "summary": "An interactive dashboard tracking regional sales performance, built to give a sales team a single view of trends and outliers.",
+  "category": "Data Analytics",
+  "tech": ["SQL", "Power BI", "Excel"],
+  "date": "2025-11",
+  "githubUrl": "https://github.com/yourusername/sales-performance-dashboard",
+  "demoUrl": "",
+  "thumbnail": "/content/projects/sales-thumb.jpg",
+  "problem": "Regional sales data was scattered across spreadsheets with no consistent way to compare performance month to month.",
+  "approach": "Consolidated data into a single SQL warehouse table, then built a Power BI dashboard with drill-downs by region, product line, and rep.",
+  "results": "Reduced manual reporting time by an estimated 5 hours/week and surfaced two underperforming regions that were previously hidden in aggregate totals.",
+  "featured": true
+}

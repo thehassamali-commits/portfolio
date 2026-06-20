@@ -1,0 +1,8 @@
+{
+  "slug": "what-i-learned-building-a-churn-model",
+  "title": "What I learned building a churn prediction model",
+  "date": "2026-03-15",
+  "tags": ["Machine Learning", "Notes"],
+  "summary": "Notes from my first end-to-end classification project — what went wrong, what I'd do differently, and the one feature that mattered most.",
+  "body": "Going in, I expected the modeling step to be the hard part. It wasn't — the hard part was deciding what counted as a 'feature' versus noise in a dataset with a lot of correlated columns.\n\nA few takeaways:\n\n1. Tenure and contract type carried most of the predictive signal. Adding more features past that point gave diminishing returns.\n2. Recall mattered more than raw accuracy here, since missing a churner is costlier than a false alarm.\n3. Cross-validation caught an overfitting issue that a single train/test split would have hidden completely.\n\nNext time I'd spend more of my time budget on feature engineering and less on trying exotic models."
+}

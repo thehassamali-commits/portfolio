@@ -1,0 +1,151 @@
+backend:
+  name: github
+  repo: yourusername/portfolio   # CHANGE to your-username/your-repo-name
+  branch: main
+
+# This lets you edit content directly on the live site at /admin,
+# and every save creates a real commit to your GitHub repo.
+publish_mode: simple
+media_folder: "public/content/uploads"
+public_folder: "/content/uploads"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "src/data/projects"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    identifier_field: "title"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "URL Slug", name: "slug", widget: "string", hint: "lowercase-with-dashes, must be unique" }
+      - { label: "Short Summary", name: "summary", widget: "text" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["Machine Learning", "Data Analytics", "AI", "Other"]
+      - { label: "Tech Used", name: "tech", widget: "list" }
+      - { label: "Date", name: "date", widget: "string", hint: "YYYY-MM" }
+      - { label: "GitHub URL", name: "githubUrl", widget: "string", required: false }
+      - { label: "Live Demo URL", name: "demoUrl", widget: "string", required: false }
+      - { label: "Thumbnail Image", name: "thumbnail", widget: "image", required: false }
+      - { label: "Problem", name: "problem", widget: "text" }
+      - { label: "Approach", name: "approach", widget: "text" }
+      - { label: "Results", name: "results", widget: "text" }
+      - { label: "Feature on homepage?", name: "featured", widget: "boolean", default: false }
+
+  - name: "blog"
+    label: "Notes / Blog"
+    folder: "src/data/blog"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    identifier_field: "title"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "URL Slug", name: "slug", widget: "string" }
+      - { label: "Date", name: "date", widget: "string", hint: "YYYY-MM-DD" }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Body", name: "body", widget: "text" }
+
+  - name: "certifications"
+    label: "Certifications"
+    files:
+      - name: "certifications"
+        label: "Certifications List"
+        file: "src/data/certifications.json"
+        fields:
+          - name: "certifications"
+            label: "Certifications"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Issuer", name: "issuer", widget: "string" }
+              - { label: "Date", name: "date", widget: "string", hint: "YYYY-MM" }
+              - { label: "Credential URL", name: "credentialUrl", widget: "string", required: false }
+              - { label: "Certificate Image", name: "image", widget: "image", required: false }
+
+  - name: "skills"
+    label: "Skills"
+    files:
+      - name: "skills"
+        label: "Skills List"
+        file: "src/data/skills.json"
+        fields:
+          - name: "skills"
+            label: "Skill Groups"
+            widget: "list"
+            fields:
+              - { label: "Category", name: "category", widget: "string" }
+              - name: "items"
+                label: "Skills"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - label: "Level"
+                    name: "level"
+                    widget: "select"
+                    options: ["Learning", "Familiar", "Proficient"]
+
+  - name: "journey"
+    label: "Journey / Timeline"
+    files:
+      - name: "journey"
+        label: "Journey Entries"
+        file: "src/data/journey.json"
+        fields:
+          - name: "journey"
+            label: "Entries"
+            widget: "list"
+            fields:
+              - { label: "Date", name: "date", widget: "string", hint: "YYYY" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Organization", name: "org", widget: "string" }
+              - label: "Type"
+                name: "type"
+                widget: "select"
+                options: ["Course", "Certificate", "Milestone", "Project"]
+              - { label: "Description", name: "description", widget: "text" }
+
+  - name: "profile"
+    label: "Profile / Basic Info"
+    files:
+      - name: "profile"
+        label: "Profile"
+        file: "src/data/profile.json"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "text" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Availability status", name: "availability", widget: "string" }
+          - { label: "Bio paragraphs", name: "bio", widget: "list" }
+          - { label: "Resume PDF", name: "resumeFile", widget: "file" }
+          - { label: "Profile Photo", name: "photo", widget: "image" }
+          - name: "socials"
+            label: "Social Links"
+            widget: "object"
+            fields:
+              - { label: "GitHub", name: "github", widget: "string" }
+              - { label: "LinkedIn", name: "linkedin", widget: "string" }
+              - { label: "Kaggle", name: "kaggle", widget: "string" }
+              - { label: "Email (mailto link)", name: "email", widget: "string" }
+
+  - name: "career"
+    label: "Career Goals"
+    files:
+      - name: "career"
+        label: "Career"
+        file: "src/data/career.json"
+        fields:
+          - { label: "Objective", name: "objective", widget: "text" }
+          - { label: "Target Roles", name: "targetRoles", widget: "list" }
+          - { label: "Areas of Interest", name: "interests", widget: "list" }
+          - { label: "Open to work?", name: "openToWork", widget: "boolean", default: true }

@@ -1,0 +1,187 @@
+.topbar {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  padding: var(--space-4) var(--space-3) var(--space-3);
+  display: flex;
+  flex-direction: column;
+  z-index: 50;
+  /* Hard cap on height + internal scroll so nothing (like the theme
+     toggle) can ever be pushed off-screen and become unreachable. */
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar-brand {
+  margin-bottom: var(--space-4);
+}
+
+.sidebar-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-tiny);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.sidebar-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: var(--space-1) 0 0.2em;
+  color: var(--color-ink);
+}
+
+.sidebar-title {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 0.6em 0.75em;
+  border-radius: var(--radius-sm);
+  color: var(--color-ink-soft);
+  font-size: 0.93rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+  transition: background var(--transition), border-color var(--transition), color var(--transition);
+}
+
+.sidebar-link:hover {
+  background: var(--color-surface-alt);
+  text-decoration: none;
+}
+
+.sidebar-link.active {
+  background: var(--color-accent-soft);
+  border-left-color: var(--color-accent);
+  color: var(--color-accent-strong);
+  font-weight: 700;
+}
+
+.sidebar-footer {
+  /* Sits in normal flow (not absolutely pinned), so with the sidebar's
+     own scroll it is always reachable regardless of nav-item count. */
+  margin-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-3);
+}
+
+.theme-toggle {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.6em;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-ink);
+  transition: background var(--transition), border-color var(--transition);
+}
+.theme-toggle:hover {
+  background: var(--color-surface-alt);
+  border-color: var(--color-accent);
+}
+
+.sidebar-backdrop {
+  display: none;
+}
+
+/* ---- Mobile: collapse sidebar into a top bar + slide-in drawer ---- */
+@media (max-width: 860px) {
+  .topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .topbar-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--color-ink);
+  }
+
+  .topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
+  .topbar-theme-btn {
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    line-height: 1;
+  }
+
+  .hamburger {
+    background: transparent;
+    border: none;
+    width: 32px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 0;
+  }
+  .hamburger span {
+    display: block;
+    height: 2px;
+    background: var(--color-ink);
+    border-radius: 2px;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 220ms ease;
+    width: min(280px, 80vw);
+    box-shadow: 0 0 24px rgba(0,0,0,0.18);
+    height: 100dvh; /* use dynamic viewport height on mobile so it never overflows behind browser UI */
+  }
+  .sidebar-open {
+    transform: translateX(0);
+  }
+
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 49;
+  }
+}

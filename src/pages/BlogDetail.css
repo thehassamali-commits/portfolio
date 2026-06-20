@@ -1,0 +1,8 @@
+.blog-body {
+  max-width: 68ch;
+  font-size: 1.02rem;
+}
+.blog-body p {
+  margin-bottom: var(--space-3);
+  white-space: pre-line;
+}
