@@ -11,8 +11,6 @@ html {
 body {
   margin: 0;
   background: var(--color-bg);
-  background-image: radial-gradient(1200px circle at 50% 0%, rgba(10, 102, 194, 0.05), transparent 45%);
-  background-attachment: fixed;
   color: var(--color-ink);
   font-family: var(--font-body);
   font-size: var(--fs-body);
@@ -21,8 +19,13 @@ body {
   transition: background var(--transition), color var(--transition);
 }
 
-[data-theme="dark"] body {
-  background-image: radial-gradient(1200px circle at 50% 0%, rgba(108, 179, 242, 0.08), transparent 45%);
+.main-content {
+  background-image: radial-gradient(1100px circle at 50% 0%, rgba(10, 102, 194, 0.07), transparent 50%);
+  background-repeat: no-repeat;
+}
+
+[data-theme="dark"] .main-content {
+  background-image: radial-gradient(1100px circle at 50% 0%, rgba(108, 179, 242, 0.09), transparent 50%);
 }
 
 h1, h2, h3, h4 {

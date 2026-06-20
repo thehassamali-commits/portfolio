@@ -1,5 +1,8 @@
 .topbar {
   display: none;
+  width: 100%;
+  flex: 0 0 100%;
+  box-sizing: border-box;
 }
 
 .sidebar {
