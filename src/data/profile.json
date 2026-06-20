@@ -1,21 +1,20 @@
 {
-  "name": "Hassam Ali",
-  "title": "Aspiring Data Scientist · AI/ML Enthusiast",
-  "tagline": "I turn messy data into decisions — currently building my path through analytics, machine learning, and applied AI.",
-  "location": "Chakwal, Pakistan",
-  "email": "thehassamali.work@gmail.com",
-  "availability": "Open to internships & entry-level roles",
-  "bio": [
-    "I'm building a career in data analytics and AI/ML. My background is in Computer Science, and over the past 2 years I've been deliberately stacking practical skills — from SQL and Python to machine learning fundamentals — through structured coursework and hands-on projects.",
-    "I care about clarity over complexity: a good model or dashboard should make a decision easier, not just look impressive. That's the standard I hold my own work to.",
-    "Outside of coursework, I like documenting what I learn so it's useful to the next person figuring out the same things I am."
-  ],
-  "resumeFile": "/resume/resume.pdf",
-  "photo": "/content/uploads/profile-photo.jpeg",
   "socials": {
     "github": "https://github.com/thehassamali-commits",
-    "linkedin": "https://linkedin.com/in/yourusername",
+    "linkedin": "https://linkedin.com/in/hassam-ali-linked",
     "kaggle": "https://kaggle.com/yourusername",
     "email": "mailto:thehassamali.work@gmail.com"
-  }
+  },
+  "bio": [
+    "I'm a BS Computer Science student building toward a career in data science and AI/ML. Over the past year",
+    "I've been deliberately stacking practical skills — from SQL and Python to machine learning fundamentals — through structured coursework and hands-on projects."
+  ],
+  "resumeFile": "/resume/resume.pdf",
+  "name": "Hassam Ali",
+  "tagline": "Building toward a career in Data Science and AI/ML through coursework and hands-on projects.",
+  "photo": "/content/uploads/profile-photo.jpeg",
+  "location": "Chakwal, Pakistan",
+  "title": "BS Computer Science student - Learning Data Science & AI/ML",
+  "availability": "Open to internships & entry-level roles",
+  "email": "thehassamali.work@gmail.com"
 }
