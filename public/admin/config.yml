@@ -1,7 +1,8 @@
 backend:
   name: github
-  repo: yourusername/portfolio   # CHANGE to your-username/your-repo-name
+  repo: thehassamali-commits/portfolio
   branch: main
+  base_url: https://portfolio-cms-oauth-theta.vercel.app
 
 # This lets you edit content directly on the live site at /admin,
 # and every save creates a real commit to your GitHub repo.
