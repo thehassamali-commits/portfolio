@@ -171,14 +171,14 @@
   }
 
   .sidebar {
-    transform: translateX(-100%);
+    transform: translateX(-100%) !important;
     transition: transform 220ms ease;
     width: min(280px, 80vw);
     box-shadow: 0 0 24px rgba(0,0,0,0.18);
     height: 100dvh; /* use dynamic viewport height on mobile so it never overflows behind browser UI */
   }
   .sidebar-open {
-    transform: translateX(0);
+    transform: translateX(0) !important;
   }
 
   .sidebar-backdrop {

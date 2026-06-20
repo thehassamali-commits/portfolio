@@ -79,6 +79,9 @@ export default function Sidebar() {
           >
             {theme === "light" ? "Dark mode" : "Light mode"}
           </button>
+          <span style={{ display: "block", marginTop: "8px", fontSize: "10px", opacity: 0.4, textAlign: "center" }}>
+            build v6-responsive-fix
+          </span>
         </div>
       </nav>
 

@@ -4,7 +4,7 @@
   --color-ink-soft: #2e3b4a;     /* secondary headings */
   --color-bg: #f6f7f9;           /* light neutral grey background */
   --color-surface: #ffffff;      /* cards, panels */
-  --color-surface-alt: #eef1f5;  /* subtle alternate section background */
+  --color-surface-alt: #eaf0f8;  /* subtle alternate section background, faint blue wash */
   --color-border: #dde2e8;       /* hairline borders */
 
   --color-accent: #0a66c2;       /* professional blue: links, primary actions */
@@ -26,7 +26,7 @@
   --color-ink-dark: #f3f5f8;
   --color-bg-dark: #10141a;
   --color-surface-dark: #1a212b;
-  --color-surface-alt-dark: #222b37;
+  --color-surface-alt-dark: #1c2738;
   --color-border-dark: #38445570;
   --color-accent-dark: #6cb3f2;
   --color-text-muted-dark: #b6c0cc;
