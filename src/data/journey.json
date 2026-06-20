@@ -1,23 +1,23 @@
 [
   {
-    "date": "2026",
-    "title": "Machine Learning Specialization",
-    "org": "Course Provider",
+    "date": "Jan 2026",
+    "title": "Google Advanced Data Analytics",
+    "org": "Coursera",
     "type": "Course",
-    "description": "Covered supervised/unsupervised learning, model evaluation, and applied ML workflows end to end."
+    "description": "Currently completing this specialization (~50% done), building on the foundations from the basic certificate."
   },
   {
-    "date": "2025",
-    "title": "Data Analytics Professional Certificate",
-    "org": "Course Provider",
+    "date": "Oct 2025",
+    "title": "Google Data Analytics Certificate",
+    "org": "Coursera",
     "type": "Certificate",
-    "description": "Hands-on SQL, dashboarding, and statistical analysis on real-world datasets."
+    "description": "Completed the foundational certificate covering data cleaning, analysis, and visualization."
   },
   {
-    "date": "2025",
-    "title": "Started self-directed Data Science learning path",
-    "org": "Self-study",
+    "date": "Oct 2025",
+    "title": "First analytics projects",
+    "org": "Self-directed",
     "type": "Milestone",
-    "description": "Began structured study across analytics, ML, and AI fundamentals with weekly project practice."
+    "description": "Completed exploratory data analysis projects in Python and Jupyter Notebook, and built Tableau dashboards."
   }
 ]
