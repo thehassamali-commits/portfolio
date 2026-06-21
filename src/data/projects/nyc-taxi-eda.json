@@ -1,0 +1,15 @@
+{
+  "slug": "nyc-taxi-eda",
+  "title": "NYC Yellow Taxi 2017 — Exploratory Data Analysis",
+  "summary": "A structured EDA on 22,699 NYC taxi trips, uncovering data-quality issues, tipping behavior, and a strong distance-fare correlation, with separate technical and executive reports.",
+  "category": "Data Analytics",
+  "tech": ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter Notebook"],
+  "date": "2026-01",
+  "githubUrl": "https://github.com/thehassamali-commits/nyc-taxi-eda-project",
+  "demoUrl": "",
+  "thumbnail": "/content/uploads/trip-distance-hist.jpg",
+  "problem": "A sample of 22,699 2017 NYC Yellow Taxi trips needed structured exploratory analysis to validate assumptions about fare structure, ridership, and tipping, surface time-based demand patterns, and quantify how strongly trip distance predicts fare — using the PACE framework (Plan, Analyze, Construct, Execute).",
+  "approach": "Cleaned and engineered the dataset in Python (Pandas, NumPy), converting timestamps and deriving trip duration, month, and day-of-week features. Ran univariate analysis (box plots + histograms) on trip distance, fare, and tip amount, then bivariate analysis comparing tipping by vendor and passenger count, ride/revenue trends by day and month, and a distance-vs-fare correlation. Delivered findings as two separate reports: a technical report with full methodology for analysts, and a plain-language executive summary with business recommendations for stakeholders.",
+  "results": "Found a strong positive correlation (r = 0.767) between trip distance and total fare, confirmed the median (1.61 mi) is more representative than the mean for typical trip length due to right-skew, and identified that 35.5% of trips received no tip at all. Also flagged real data-quality issues — 14 trips with negative fares and a $1,200 outlier fare — and recommended an outlier-review step before any revenue reporting. Demand peaked on Fridays by ride count but Thursdays by revenue, with March the busiest month and July the quietest.",
+  "featured": true
+}
