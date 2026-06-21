@@ -1,0 +1,8 @@
+{
+  "slug": "first-real-case-study-lessons",
+  "title": "What my first real case study taught me",
+  "date": "2025-10-25",
+  "tags": ["Data Analytics", "Notes"],
+  "summary": "Notes from completing the Cyclistic bike-share case study — what I learned about cleaning real data, and why the insight matters more than the chart.",
+  "body": "Finishing the Google Data Analytics certificate with the Cyclistic case study was the first time I worked with data that wasn't already clean. The Divvy trip data had inconsistent column names across files, duplicate rows, and rides that lasted negative minutes or over 24 hours — none of which a tutorial dataset ever prepares you for.\n\nA few things stood out:\n\n1. Most of the actual work was in R before any chart got made — renaming columns, merging files with bind_rows(), and deciding what counted as an outlier worth removing. The analysis step was almost fast by comparison.\n\n2. A chart isn't the deliverable, the interpretation is. It was easy to make a bar chart showing members ride more on weekdays. It took more thought to say what that meant: members commute, casual riders use the service for leisure, and that difference should shape how each group gets marketed to.\n\n3. Recommendations need to be specific enough to act on. \"Increase marketing to casual riders\" isn't useful. \"Target weekend riders with short-term membership plans\" is something an actual marketing team could execute.\n\nNext time, I want to spend more time validating my cleaning decisions against the raw data before moving to visualization — a few outliers slipped through that I only caught by re-checking the summary statistics afterward."
+}
