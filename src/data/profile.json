@@ -5,10 +5,10 @@
     "kaggle": "https://kaggle.com/yourusername",
     "email": "mailto:thehassamali.work@gmail.com"
   },
-  "bio": [
-    "I'm a BS Computer Science student building toward a career in data science and AI/ML. Over the past year",
-    "I've been deliberately stacking practical skills — from SQL and Python to machine learning fundamentals — through structured coursework and hands-on projects."
-  ],
+"bio": [
+  "I'm a BS Computer Science student working toward a career in Data Science and Artificial Intelligence/Machine Learning. I've been building a strong foundation in Python, SQL, statistics, and data analysis through structured coursework and hands-on projects.",
+  "I enjoy applying what I learn to real-world problems and continuously expanding my technical skills through practical experience, rather than just completing courses passively."
+],
   "resumeFile": "/resume/resume.pdf",
   "name": "Hassam Ali",
   "tagline": "Building toward a career in Data Science and AI/ML through coursework and hands-on projects.",
