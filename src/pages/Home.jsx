@@ -17,7 +17,7 @@ export default function Home() {
             <p className="hero-tagline">{profile.tagline}</p>
             <div className="hero-actions">
               <Link className="btn btn-primary" to="/projects">View projects</Link>
-              <Link className="btn btn-ghost" to="/resume">View resume</Link>
+              <Link className="resume-btn" to="/resume">View resume</Link>
             </div>
             <div className="hero-socials">
               <a href={profile.socials.github} target="_blank" rel="noreferrer">GitHub</a>
