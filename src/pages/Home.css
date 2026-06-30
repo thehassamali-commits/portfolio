@@ -80,16 +80,16 @@ a.resume-btn {
   padding: 0.7em 1.4em;
   border-radius: var(--radius-sm);
   text-decoration: none !important;
-  border: 2px solid #ffffff !important;
+  border: none !important;
   color: #ffffff !important;
-  background-color: rgba(255, 255, 255, 0.12) !important;
+  background-color: #2d5a8c !important;
   transition: background-color 180ms ease, transform 180ms ease;
 }
 a.resume-btn:visited {
   color: #ffffff !important;
 }
 a.resume-btn:hover {
-  background-color: rgba(255, 255, 255, 0.25) !important;
+  background-color: #356aa3 !important;
   color: #ffffff !important;
   transform: translateY(-1px);
 }
