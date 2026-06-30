@@ -1,9 +1,27 @@
+import { useState } from "react";
 import profile from "../data/profile.json";
 import { asset } from "../utils/asset";
 import "./Resume.css";
 
+function isMobileDevice() {
+  if (typeof navigator === "undefined") return false;
+  return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+}
+
 export default function Resume() {
   const resumeUrl = asset(profile.resumeFile);
+  const [isMobile] = useState(isMobileDevice);
+
+  // Mobile browsers generally can't render a PDF inside an <iframe> and
+  // instead force a download. Google's viewer renders it as an image-based
+  // preview inside the iframe instead, which works everywhere.
+  const absoluteResumeUrl =
+    typeof window !== "undefined"
+      ? new URL(resumeUrl, window.location.href).href
+      : resumeUrl;
+  const mobileViewerUrl = `https://docs.google.com/viewer?embedded=true&url=${encodeURIComponent(
+    absoluteResumeUrl
+  )}`;
 
   return (
     <div className="page">
@@ -19,7 +37,7 @@ export default function Resume() {
 
       <div className="resume-viewer card">
         <iframe
-          src={resumeUrl}
+          src={isMobile ? mobileViewerUrl : resumeUrl}
           title="Resume"
           width="100%"
           height="100%"
