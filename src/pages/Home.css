@@ -72,14 +72,14 @@
 }
 
 .btn-ghost {
-  border: 1.5px solid #3a4f6e;
-  color: #f3f5f8;
-  background: transparent;
+  border: 1.5px solid #5b7da3;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
 }
 .btn-ghost:hover {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.18);
   color: #ffffff;
-  border-color: rgba(255,255,255,0.4);
+  border-color: #ffffff;
 }
 
 .hero-socials {
