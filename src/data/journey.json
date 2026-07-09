@@ -1,5 +1,12 @@
 [
   {
+  "date": "Jul 2026",
+  "title": "The Power of Statistics",
+  "org": "Coursera / Google",
+  "type": "Course",
+  "description": "Completed Course 3 of the Google Advanced Data Analytics certificate, covering probability distributions, sampling, confidence intervals, and hypothesis testing."
+  },
+  {
     "date": "Jan 2026",
     "title": "Google Advanced Data Analytics",
     "org": "Coursera",
