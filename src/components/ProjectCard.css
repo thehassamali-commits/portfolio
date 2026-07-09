@@ -46,11 +46,12 @@
   font-size: var(--fs-small);
   color: var(--color-text-muted);
   margin-bottom: var(--space-2);
-  flex: 1;
 }
 
 .project-card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4em;
+  margin-top: auto;
+  padding-top: var(--space-2);
 }
