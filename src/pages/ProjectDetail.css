@@ -5,11 +5,18 @@
   font-weight: 600;
 }
 
+.project-detail-summary {
+  max-width: 62ch;
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  margin: var(--space-2) 0 0;
+}
+
 .project-detail-tags {
   display: flex;
   gap: 0.5em;
   flex-wrap: wrap;
-  margin: var(--space-2) 0 var(--space-3);
+  margin: var(--space-3) 0 var(--space-3);
 }
 
 .project-detail-links {
@@ -18,16 +25,22 @@
 }
 
 .project-detail-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--color-border);
   margin-bottom: var(--space-5);
   background: var(--color-surface-alt);
+  padding: var(--space-3);
 }
 .project-detail-thumb img {
   width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
+  max-height: 480px;
+  object-fit: contain;
+  border-radius: calc(var(--radius-md) - 4px);
+  box-shadow: var(--shadow-card);
 }
 
 .project-detail-section {
@@ -36,4 +49,109 @@
 }
 .project-detail-section h3 {
   color: var(--color-accent);
+}
+
+/* ---- At-a-glance stat strip ---- */
+.project-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.project-highlight-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-3) var(--space-2);
+  text-align: center;
+}
+
+.project-highlight-value {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 1.2rem + 0.6vw, 1.8rem);
+  font-weight: 800;
+  color: var(--color-accent);
+  line-height: 1.15;
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.01em;
+}
+
+.project-highlight-label {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+/* ---- Problem / Approach / Results as a numbered visual story ---- */
+.project-story {
+  max-width: 68ch;
+  margin-bottom: var(--space-4);
+}
+
+.project-story-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: var(--space-3);
+}
+
+.project-story-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-story-number {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--color-accent-strong);
+  background: var(--color-accent-soft);
+  border: 2px solid var(--color-accent);
+}
+
+.project-story-line {
+  width: 2px;
+  flex: 1;
+  margin: 0.4rem 0;
+  background: var(--color-border);
+}
+
+.project-story-body {
+  padding-bottom: var(--space-4);
+}
+
+.project-story-kicker {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.project-story-body p {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .project-story-item {
+    grid-template-columns: 38px 1fr;
+    gap: var(--space-2);
+  }
+  .project-story-number {
+    width: 36px;
+    height: 36px;
+    font-size: 0.82rem;
+  }
 }

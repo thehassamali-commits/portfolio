@@ -33,6 +33,14 @@ collections:
       - { label: "GitHub URL", name: "githubUrl", widget: "string", required: false }
       - { label: "Live Demo URL", name: "demoUrl", widget: "string", required: false }
       - { label: "Thumbnail Image", name: "thumbnail", widget: "image", required: false }
+      - label: "At-a-glance highlights"
+        name: "highlights"
+        widget: "list"
+        required: false
+        hint: "Optional stat callouts shown at the top of the project page, e.g. value '22,699' / label 'Trips analyzed'"
+        fields:
+          - { label: "Value", name: "value", widget: "string" }
+          - { label: "Label", name: "label", widget: "string" }
       - { label: "Problem", name: "problem", widget: "text" }
       - { label: "Approach", name: "approach", widget: "text" }
       - { label: "Results", name: "results", widget: "text" }

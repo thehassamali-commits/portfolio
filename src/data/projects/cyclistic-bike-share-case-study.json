@@ -8,6 +8,11 @@
   "githubUrl": "https://github.com/thehassamali-commits/data-analysis-project",
   "demoUrl": "",
   "thumbnail": "/content/uploads/cyclistic-thumb.jpg",
+  "highlights": [
+    { "value": "5,800+", "label": "Bikes across 600 stations" },
+    { "value": "Jan–Mar", "label": "2019 vs 2020 trip data compared" },
+    { "value": "8AM & 5PM", "label": "Member peak commute times" }
+  ],
   "problem": "Cyclistic, a Chicago bike-share company with 5,800 bikes and 600 stations, wanted to grow its membership base. The marketing team needed to understand how casual riders and annual members use the service differently in order to design a campaign that converts casual riders into members.",
   "approach": "Analyzed public Divvy trip data (Jan–Mar 2019 and Jan–Mar 2020) using R (tidyverse, lubridate, dplyr) for cleaning and transformation — renaming inconsistent columns, merging datasets, calculating ride length and time-based features, and removing nulls, duplicates, and outliers. Built visualizations in Tableau to compare ride frequency, duration, time-of-day patterns, and seasonality between member and casual riders.",
   "results": "Found that members ride consistently on weekdays with short commute-pattern trips (peaking at 8 AM and 5 PM), while casual riders take longer, more frequent weekend trips peaking midday — and are far more seasonal than members. Based on this, recommended targeted weekend membership plans, commuter-benefit messaging, and post-ride digital campaigns to convert frequent casual riders into members.",
