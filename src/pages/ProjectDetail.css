@@ -267,6 +267,9 @@
 }
 .project-nav-prev { text-align: left; }
 .project-nav-next { text-align: right; align-items: flex-end; }
+.project-nav-footer--single {
+  grid-template-columns: 1fr;
+}
 .project-nav-dir {
   font-size: var(--fs-tiny);
   font-weight: 700;

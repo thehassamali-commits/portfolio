@@ -157,19 +157,22 @@ export default function ProjectDetail() {
       </div>
 
       {(prevProject || nextProject) && (
-        <nav className="project-nav-footer reveal" aria-label="More projects">
-          {prevProject ? (
+        <nav
+          className={`project-nav-footer reveal${!(prevProject && nextProject) ? " project-nav-footer--single" : ""}`}
+          aria-label="More projects"
+        >
+          {prevProject && (
             <Link to={`/projects/${prevProject.slug}`} className="project-nav-link project-nav-prev">
               <span className="project-nav-dir">← Previous</span>
               <span className="project-nav-title">{prevProject.title}</span>
             </Link>
-          ) : <span />}
-          {nextProject ? (
+          )}
+          {nextProject && (
             <Link to={`/projects/${nextProject.slug}`} className="project-nav-link project-nav-next">
               <span className="project-nav-dir">Next →</span>
               <span className="project-nav-title">{nextProject.title}</span>
             </Link>
-          ) : <span />}
+          )}
         </nav>
       )}
     </div>
