@@ -155,3 +155,137 @@
     font-size: 0.82rem;
   }
 }
+
+/* ---- Reading progress bar ---- */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 60;
+  background: transparent;
+  pointer-events: none;
+}
+.reading-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-strong));
+  transition: width 120ms linear;
+}
+
+/* ---- Scroll-reveal (global reduced-motion rule in tokens.css disables this automatically) ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 550ms ease, transform 550ms ease;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---- Mini meter bar under each highlight stat ---- */
+.project-highlight-meter {
+  margin-top: 0.7rem;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--color-border);
+  overflow: hidden;
+}
+.project-highlight-meter-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-accent-strong));
+  transition: width 900ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.project-highlight-card.is-visible .project-highlight-meter-fill {
+  width: var(--fill);
+}
+
+/* ---- Tech stack row with icon badges ---- */
+.project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: var(--space-5);
+}
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4em 0.8em 0.4em 0.4em;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: 999px;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-ink);
+  box-shadow: var(--shadow-card);
+}
+.tech-icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+/* ---- Prev / next project navigation ---- */
+.project-nav-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+.project-nav-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  text-decoration: none;
+  color: var(--color-ink);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+.project-nav-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-card);
+  text-decoration: none;
+}
+.project-nav-prev { text-align: left; }
+.project-nav-next { text-align: right; align-items: flex-end; }
+.project-nav-dir {
+  font-size: var(--fs-tiny);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+.project-nav-title {
+  font-weight: 700;
+  font-size: var(--fs-small);
+  line-height: 1.4;
+}
+
+@media (max-width: 560px) {
+  .project-nav-footer {
+    grid-template-columns: 1fr;
+  }
+  .project-nav-next {
+    text-align: left;
+    align-items: flex-start;
+  }
+}
