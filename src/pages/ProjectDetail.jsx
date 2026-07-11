@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
-import { projects, getProjectBySlug } from "../data/projectsLoader";
+import { getProjectBySlug } from "../data/projectsLoader";
 import { asset } from "../utils/asset";
 import TechIcon from "../components/TechIcon";
 import "./ProjectDetail.css";
@@ -63,10 +63,6 @@ export default function ProjectDetail() {
   }, [slug]);
 
   if (!project) return <Navigate to="/projects" replace />;
-
-  const idx = projects.findIndex((p) => p.slug === project.slug);
-  const prevProject = idx > 0 ? projects[idx - 1] : null;
-  const nextProject = idx < projects.length - 1 ? projects[idx + 1] : null;
 
   return (
     <div className="page" ref={rootRef}>
@@ -156,22 +152,6 @@ export default function ProjectDetail() {
         ))}
       </div>
 
-      {(prevProject || nextProject) && (
-        <nav className="project-nav-footer reveal" aria-label="More projects">
-          {prevProject ? (
-            <Link to={`/projects/${prevProject.slug}`} className="project-nav-link project-nav-prev">
-              <span className="project-nav-dir">← Previous</span>
-              <span className="project-nav-title">{prevProject.title}</span>
-            </Link>
-          ) : <span />}
-          {nextProject ? (
-            <Link to={`/projects/${nextProject.slug}`} className="project-nav-link project-nav-next">
-              <span className="project-nav-dir">Next →</span>
-              <span className="project-nav-title">{nextProject.title}</span>
-            </Link>
-          ) : <span />}
-        </nav>
-      )}
     </div>
   );
 }
