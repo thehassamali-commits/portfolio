@@ -2,26 +2,34 @@
   {
     "category": "Programming & Querying",
     "items": [
-      { "name": "Python", "level": "Familiar" },
-      { "name": "SQL", "level": "Familiar" },
-      { "name": "R", "level": "Learning" }
+      { "name": "Python", "level": "Proficient" },
+      { "name": "SQL", "level": "Proficient" },
+      { "name": "R", "level": "Familiar" }
     ]
   },
   {
     "category": "Data Analysis & Visualization",
     "items": [
-      { "name": "Pandas / NumPy", "level": "Familiar" },
-      { "name": "Matplotlib / Seaborn", "level": "Familiar" },
+      { "name": "Pandas / NumPy", "level": "Proficient" },
+      { "name": "Matplotlib / Seaborn", "level": "Proficient" },
       { "name": "Excel", "level": "Proficient" },
-      { "name": "Tableau", "level": "Learning" },
+      { "name": "Tableau", "level": "Proficient" },
       { "name": "Power BI", "level": "Learning" }
+    ]
+  },
+  {
+    "category": "Statistics & Analytics",
+    "items": [
+      { "name": "Probability & Statistics", "level": "Proficient" },
+      { "name": "Hypothesis Testing", "level": "Proficient" },
+      { "name": "Confidence Intervals", "level": "Proficient" }
     ]
   },
   {
     "category": "Tools & Platforms",
     "items": [
-      { "name": "Git / GitHub", "level": "Familiar" },
-      { "name": "Jupyter Notebook", "level": "Familiar" }
+      { "name": "Git / GitHub", "level": "Proficient" },
+      { "name": "Jupyter Notebook", "level": "Proficient" }
     ]
   }
 ]
